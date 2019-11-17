@@ -11,13 +11,15 @@ import { History } from "./views/history"
 import { Network } from "./views/network"
 import { About } from "./views/about"
 import { NotFound } from "./views/not_found";
+import { PageTop } from "./views/top_bar";
 
 export default function AppRouter() {
     return (
-        <Router style={{maxHeight:"100vh"}}>
+        <Router >
             <div >
+                {/*<PageTop/>*/}
                 <Nav/>
-                <div style={{marginLeft:"15em", marginRight:"1em"}}>
+                <div style={{marginLeft:"15em", marginRight:"1em", maxHeight:"100vh"}}>
                 <Switch>
                     <Route exact path="/" component={withRouter(Home)}/>
                     <Route path="/network" component={withRouter(Network)}/>

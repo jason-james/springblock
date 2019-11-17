@@ -6,11 +6,9 @@ import { Flowpoint, Flowspace } from 'flowpoints';
 export class Home extends Component {
     render() {
         return (
-            <Page title={process.env.APP_NAME} >
+            <Page title={process.env.APP_NAME} style={{top:"65px"}} >
                 <Row>
-
-
-                    <Col align="center" padding={5}>
+                    <Col align="center" padding={5} >
                         <Panel title='Tx Completed'>
                             <div style={{margin:"2rem"}}>
                                     <p style={{fontSize:"18px"}}>24h: 18</p>
@@ -44,8 +42,6 @@ export class Home extends Component {
                             </div>
                         </Panel>
                     </Col>
-
-
                 </Row>
                 <Row>
                     <Col align="center">
