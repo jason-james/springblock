@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Page, Panel } from 'react-blur-admin';
 import { Row, Col } from 'react-flex-proto';
+import { Flowpoint, Flowspace } from 'flowpoints';
 
 export class Home extends Component {
     render() {
@@ -53,7 +54,57 @@ export class Home extends Component {
                 </Row>
                 <Row>
                     <Col padding={5}>
+                            <Flowspace background="transparent">
+                                <Flowpoint style={{borderColor: "white", width: "350px", height:"75px"}} key="a" outputs={["b"]} variant="outlined">
+                                    <Col align="center">
+                                        <div style={{margin:"1em"}}>
+                                            <p >r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV</p>
+                                            <p >Transfer 139.0049030 XRP</p>
 
+                                        </div>
+                                    </Col>
+                                </Flowpoint>
+                                <Flowpoint style={{borderColor: "white", width: "200px", height:"100px"}} key="b" outputs={["c"]} variant="outlined">
+                                    <Col align="center">
+                                        <div style={{margin:"1rem"}}>
+                                            <p style={{fontSize:"18px"}}>XRP/ULT</p>
+                                            <p style={{fontSize:"14px"}}>139.32443/1501.73267</p>
+                                        </div>
+                                    </Col>
+                                </Flowpoint>
+                                <Flowpoint style={{borderColor: "white", width: "200px", height:"100px"}} key="c" outputs={["d"]} variant="outlined">
+                                    <Col align="center">
+                                        <div style={{margin:"2rem"}}>
+                                            <p style={{fontSize:"18px"}}>ULT/CNY</p>
+                                            <p style={{fontSize:"14px"}}>1501.73267/310.73267</p>
+                                        </div>
+                                    </Col>
+                                </Flowpoint>
+                                <Flowpoint style={{borderColor: "white", width: "200px", height:"100px"}} key="d" outputs={["e"]} variant="outlined">
+                                    <Col align="center">
+                                        <div style={{margin:"2rem"}}>
+                                            <p style={{fontSize:"18px"}}>CNY/XRP</p>
+                                            <p style={{fontSize:"14px"}}>310.73267/139.73267</p>
+                                        </div>
+                                    </Col>
+                                </Flowpoint>
+                                <Flowpoint style={{borderColor: "white", width: "200px", height:"100px"}} key="e" outputs={["f"]} variant="outlined">
+                                    <Col align="center">
+                                        <div style={{margin:"2rem"}}>
+                                            <p style={{fontSize:"18px"}}>XRP/ETH</p>
+                                            <p style={{fontSize:"14px"}}>139.73267/0.13938</p>
+                                        </div>
+                                    </Col>
+                                </Flowpoint>
+                                <Flowpoint style={{borderColor: "white", width: "350px", height:"75px"}} key="f" outputs={["a"]} variant="outlined">
+                                    <Col align="center">
+                                        <div style={{margin:"1em"}}>
+                                            <p >r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV</p>
+                                            <p >Receive 0.13938 ETH</p>
+                                        </div>
+                                    </Col>
+                                </Flowpoint>
+                            </Flowspace>
                     </Col>
                 </Row>
             </Page>

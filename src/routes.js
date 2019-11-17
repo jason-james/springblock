@@ -3,28 +3,27 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link,
     withRouter
 } from "react-router-dom";
 import { Sidebar } from "./common/nav"
 import { Home } from "./views/home"
+import { History } from "./views/history"
+import { Network } from "./views/network"
+import { About } from "./views/about"
+import { NotFound } from "./views/not_found";
 
 export default function AppRouter() {
     return (
-        <Router>
-            <div>
+        <Router style={{maxHeight:"100vh"}}>
+            <div >
                 <Nav/>
                 <div style={{marginLeft:"15em", marginRight:"1em"}}>
                 <Switch>
-                    <Route path="/">
-                        <Home />
-                    </Route>
-                    <Route path="/about">
-                        <About />
-                    </Route>
-                    <Route path="/users">
-                        <Users />
-                    </Route>
+                    <Route exact path="/" component={withRouter(Home)}/>
+                    <Route path="/network" component={withRouter(Network)}/>
+                    <Route path="/about" component={withRouter(About)}/>
+                    <Route path="/history" component={withRouter(History)}/>
+                    <Route component={withRouter(NotFound)}/>
                 </Switch>
                 </div>
             </div>
@@ -32,12 +31,4 @@ export default function AppRouter() {
     );
 }
 
-const Nav = withRouter(Sidebar)
-
-function About() {
-    return <h2>About</h2>;
-}
-
-function Users() {
-    return <h2>Users</h2>;
-}
+const Nav = withRouter(Sidebar);

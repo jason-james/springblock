@@ -6,8 +6,8 @@ export class Sidebar extends Component {
     state = {
         navItems: [
             { pathname: '/', label: 'Home', icon: 'home' },
-            { pathname: '/network', label: 'Network', icon: 'dot-circle-o' },
             { pathname: '/history', label: 'History', icon: 'list-ul' },
+            { pathname: '/network', label: 'Network', icon: 'dot-circle-o' },
             { pathname: '/about', label: 'About', icon: 'info' },
         ],
     }
