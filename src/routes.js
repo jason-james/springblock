@@ -11,7 +11,6 @@ import { History } from "./views/history"
 import { Network } from "./views/network"
 import { About } from "./views/about"
 import { NotFound } from "./views/not_found";
-import { PageTop } from "./views/top_bar";
 
 export default function AppRouter() {
     return (

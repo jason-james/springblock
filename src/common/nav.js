@@ -31,8 +31,7 @@ export class Sidebar extends Component {
 
     render() {
         return (
-            <aside style={{top:"0px"}} className="al-sidebar" ng-swipe-right="menuExpand()" ng-swipe-left="menuCollapse()"
-                   ng-mouseleave="hoverElemTop=selectElemTop">
+            <aside style={{top:"0px"}} className="al-sidebar">
                 <div className="panel-title text-center" style={{marginTop:"24px"}}>SpringBlock</div>
                 <ul className="al-sidebar-list">
                     {this.renderLinks()}
