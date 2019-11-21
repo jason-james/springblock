@@ -171,7 +171,7 @@ export class Network extends Component {
                     <td>{rate}</td>
                     <td>{parseFloat(topVal).toFixed(2)} {topCur}</td>
                     <td>{parseFloat(baseVal).toFixed(2)} {baseCur}</td>
-                    <td><a target="_blank" href={`https://xrpscan.com/tx/${offer.hash}`} style={{color: "#00d1b2"}}><abbr>{this.abbreviateHash(offer.hash)}</abbr></a></td>
+                    <td><a target="_blank" href={`https://xrpscan.com/tx/${offer.hash}`} style={{color: "#00d1b2"}} rel="noopener noreferrer"><abbr>{this.abbreviateHash(offer.hash)}</abbr></a></td>
                     <td>{offer.meta.AffectedNodes.length}</td>
                     <td>{this.convertDate(offer.date)}</td>
             </TableRow>

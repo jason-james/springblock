@@ -63,6 +63,11 @@ export class Home extends Component {
 
     }
 
+    componentWillUnmount() {
+        if (this.chart) {
+            this.chart.dispose();
+        }
+    }
 
     render() {
         return (
@@ -129,7 +134,7 @@ export class Home extends Component {
                                         <td>139.359 XRP</td>
                                         <td>1501.834 ULT</td>
                                         <td>10.443</td>
-                                        <td><a style={{color:"#00d1b2"}}>DA011DAF4537EAE5E...58898566238CFF86</a></td>
+                                        <td><a style={{color:"#00d1b2"}} href="xrpscan.com" >DA011DAF4537EAE5E...58898566238CFF86</a></td>
                                         <td>2019-11-21 (11 : 42)</td>
                                     </TableRow>
                                     <TableRow>
@@ -137,7 +142,7 @@ export class Home extends Component {
                                         <td>1501.834 ULT</td>
                                         <td>310.3489 CNY</td>
                                         <td>0.310</td>
-                                        <td><a style={{color:"#00d1b2"}}>DA011DAF4537EAE5E...58898566238CFF86</a></td>
+                                        <td><a style={{color:"#00d1b2"}} href="xrpscan.com">DA011DAF4537EAE5E...58898566238CFF86</a></td>
                                         <td>2019-11-21 (11 : 42)</td>
                                     </TableRow>
                                     <TableRow>
@@ -145,7 +150,7 @@ export class Home extends Component {
                                         <td>310.3489 CNY</td>
                                         <td>139.390 XRP</td>
                                         <td>0.54</td>
-                                        <td><a style={{color:"#00d1b2"}}>DA011DAF4537EAE5E...58898566238CFF86</a></td>
+                                        <td><a style={{color:"#00d1b2"}} href="xrpscan.com">DA011DAF4537EAE5E...58898566238CFF86</a></td>
                                         <td>2019-11-21 (11 : 42)</td>
                                     </TableRow>
                                     <TableRow>
@@ -153,7 +158,7 @@ export class Home extends Component {
                                         <td>139.390 XRP</td>
                                         <td>0.139654 ETH</td>
                                         <td>0.00140</td>
-                                        <td><a style={{color:"#00d1b2"}}>DA011DAF4537EAE5E...58898566238CFF86</a></td>
+                                        <td><a style={{color:"#00d1b2"}} href="xrpscan.com">DA011DAF4537EAE5E...58898566238CFF86</a></td>
                                         <td>2019-11-21 (11 : 42)</td>
                                     </TableRow>
                                 </TableBody>
