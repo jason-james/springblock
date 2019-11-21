@@ -200,7 +200,7 @@ export class Network extends Component {
                                             <td>{currency.currency}</td>
                                             <td>{parseFloat(currency.issued_value.substr(0,10)).toFixed(2)} XRP</td>
                                             <td>{parseFloat(currency.avg_exchange_volume).toFixed(2)}</td>
-                                            <td>{this.state.issuers[currency.issuer] || currency.issuer}</td>
+                                            <td>{this.state.issuers[currency.issuer] || this.abbreviateHash(currency.issuer)}</td>
                                         </TableRow>
                                     )
                                 })}
@@ -241,5 +241,3 @@ export class Network extends Component {
         )
     }
 }
-
-// Also have a recent exchanges table, and buttons to have which pairs to check e.g. xrp/btc, xrp/usd, xrp/eth, xrp/cny xrp/chf
