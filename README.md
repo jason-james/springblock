@@ -1,14 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Front-end dashboard for Jack the Rippler, market optimisation software for XRP Ledger.
 
-In the project directory, you can run:
+### Winner of "Product closest to production-level" in Ripple Block-Sprint Hackathon.
 
-### `npm install`
+![Screenshot 1](https://media.licdn.com/dms/image/C4D22AQFcETDM7k0RnQ/feedshare-shrink_2048_1536/0?e=1577923200&v=beta&t=SGjRuDxLPjfBAnTE4EV2lVtEcDK8__2tismYvEOuByw)
 
-Then run
-
-### `npm start`
-
-To run the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits and you will see any lint errors in the console.<br />
+![Screenshot 2](https://media.licdn.com/dms/image/C4D22AQGjr8yuDC_B9w/feedshare-shrink_2048_1536/0?e=1577923200&v=beta&t=K3gL5IDgEPsJlkcr2jzpcCwncnnuAEmGerYUl3xUNCg)
